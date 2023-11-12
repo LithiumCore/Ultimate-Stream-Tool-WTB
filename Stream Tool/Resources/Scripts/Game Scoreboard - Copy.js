@@ -74,9 +74,6 @@ async function getData(scInfo) {
 	let caster2 = scInfo['caster2Name'];
 	twitter2 = scInfo['caster2Twitter'];
 	twitch2 = scInfo['caster2Twitch'];;
-	let startggLink = "start.gg/WTB";
-	let twitchLink = "twitch.tv/WisconsinSmash";
-	let tournamentNumber = "#" + scInfo['tournamentName'].slice(-2);
 
 
 	//first, things that will happen only the first time the html loads
@@ -255,24 +252,16 @@ async function getData(scInfo) {
 		updateSocialText("caster2N", caster2, casterSize, "caster2TextBox");
 		updateSocialText("caster2Tr", twitter2, twitterSize, "caster2TwitterBox");
 		updateSocialText("caster2Th", twitch2, twitterSize, "caster2TwitchBox");
-		//below covers WTB links that are pretty consistent
-		updateSocialText("linksStgg", startggLink, twitterSize, "linksStartggBox");
-		updateSocialText("linksTh", twitchLink, twitterSize, "linksTwitchBox");
-		updateSocialText("linksNum", tournamentNumber, casterSize, "linksTextBox");
 
 		//setup twitter/twitch change
 		socialChange1("caster1TwitterBox", "caster1TwitchBox");
 		socialChange2("caster2TwitterBox", "caster2TwitchBox");
-		socialChangeLinks("linksStartggBox", "linksTwitchBox");
 		//set an interval to keep changing the names
 		socialInt1 = setInterval( () => {
 			socialChange1("caster1TwitterBox", "caster1TwitchBox");
 		}, socialInterval);
 		socialInt2 = setInterval(() => {
 			socialChange2("caster2TwitterBox", "caster2TwitchBox");
-		}, socialInterval);
-		socialLinksInt = setInterval(() => {
-			socialChangeLinks("linksStartggBox", "linksTwitchBox");
 		}, socialInterval);
 
 		//keep changing this boolean for the previous intervals
@@ -650,30 +639,6 @@ function socialChange2(twitterWrapperID, twitchWrapperID) {
 		} else {
 			fadeOut(twitchWrapperEL, () => {
 				fadeIn(twitterWrapperEL, 0);
-			});
-		}
-
-	}
-}
-
-function socialChangeLinks(startggWrapperID, twitchWrapperID) {
-
-	const startggWrapperEL = document.getElementById(startggWrapperID);
-	const twitchWrapperEL = document.getElementById(twitchWrapperID);
-
-	if (startup) {
-			startggWrapperEL.style.opacity = 1;
-			twitchWrapperEL.style.opacity = 0;
-			
-	} else if (!startup) {
-
-		if (socialSwitch) {
-			fadeOut(startggWrapperEL, () => {
-				fadeIn(twitchWrapperEL, 0);
-			});
-		} else {
-			fadeOut(twitchWrapperEL, () => {
-				fadeIn(startggWrapperEL, 0);
 			});
 		}
 

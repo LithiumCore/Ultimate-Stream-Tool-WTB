@@ -27,8 +27,7 @@
         }
         @font-face {
             font-family: "Smash";
-			src: url('Resources/Fonts/boulderregular.TTF');
-            <!--src: url('Resources/Fonts/FOT-RodinBokutohPro-UB.otf');-->
+            src: url('Resources/Fonts/FOT-RodinBokutohPro-UB.otf');
         }
        
 
@@ -45,14 +44,13 @@
         }
 
         #logo {
-		   display: none;
            left: 860px;
            top: 10px;
         }
 		
 		#tournamentLogo {
            left: 10px;
-           top: 930px;
+           top: 960px;
 		   height: 110px
         }
 
@@ -102,12 +100,12 @@
             opacity: 0;
         }
         #p1Character { 
-            left: 130px;
-            top: 342px;
+            left: 240px;
+            top: 345px;
         }
         #p2Character {
-            right: -410px;
-            top: 342px;
+            right: -296px;
+            top: 345px;
         }
 
 
@@ -129,23 +127,23 @@
 
         .wrappers {
             position: absolute;
-            width: 390px;
+            width: 330px;
             height: 54px;
             line-height: 54px;
-            top: 339px;
+            top: 342px;
             opacity: 0;
             color: white;
         }
 
         #p1Wrapper {
-            left: 190px;
-            text-align: center;
+            left: 297px;
+            text-align: left;
          
         }
 
         #p2Wrapper {
-            right: -350px;
-            text-align: center;
+            right: -236px;
+            text-align: right;
    
         }
 
@@ -158,7 +156,7 @@
 
         .scores {
             position: absolute;
-			top: 415px;
+            top: 415px;
         }
         #scoresP2 {
             right: 35px;
@@ -184,8 +182,8 @@
             display: none;
         }
         #wlP1 {
-            top: -320px;
-            right: -792px;
+            top: -311px;
+            right: -382px;
             transform: scale(0.545);
         }
         #win1P2 {
@@ -204,8 +202,8 @@
             display: none;
         }
         #wlP2 {
-            top: -321px;
-            right: -755px;
+            top: -311px;
+            right: -351px;
             transform: scale(0.545);
         }
 
@@ -227,30 +225,30 @@
 
         #format {
             position: absolute;
-			left: 193px;
-			top: -888px;
+            left: 1213px;
+            top: -903px;
             text-align: center;
             font-family: "Smash";
             color: #000000;
         } 
 
         #round {
-			position: absolute;
-			width: 230px;
-			height: 20px;
-			left: 28px;
-			top: -928px;
-			text-align: center;
-			font-family: "Smash";
-			color: #000000;
+            position: absolute;
+            width: 230px;
+            height: 40px;
+            left: 602PX;
+            top: -898px;
+            text-align: center;
+            font-family: "Smash";
+            color: #000000;
         }
 
         #bestOf {
             position: absolute;
             width: 263px;
             height: 50px;
-            left: 9px;
-            top: -888px;
+            left: 1020px;
+            top: -903px;
             text-align: center;
             font-family: "Smash";
             font-size: 28px;
@@ -259,24 +257,24 @@
 
         #p1NScore {
         position: absolute;
-        top: 42px;
-        left: 787px;
+        top: 22px;
+        left: 367px;
         text-align: center;
         opacity: 0;
-        width: 70px;
-        height: 60px;
+        width: 85px;
+        height: 85px;
         letter-spacing: -5px;
         color: #101012;
         }
 
         #p2NScore {
         position: absolute;
-        top: 42px;
-        right: 787px;
+        top: 22px;
+        right: 377px;
         text-align: center;
         opacity: 0;
-        width: 70px;
-        height: 60px;
+        width: 85px;
+        height: 85px;
         letter-spacing: -5px;
         color: #101012;
         }
@@ -349,65 +347,7 @@
             color: rgb(168, 168, 168);
         }
 
-        #overlayLinks {
-            position: absolute;
-            left: 292px;
-            bottom: 70px;
-            opacity: 1;
-            transform: scale(1.1);
-            filter: drop-shadow(0px 0px 3px black);
-        }
-        .linksTextBox {
-            position: absolute;
-            width: 255px;
-            height: 36px;
-            bottom: -5px;
-            right: -123px;
-            text-align: center;
-        }
-        .linksText {
-            font-size: 22px;
-            font-family: "Smash";
-        }
-
-        .linksStartggBox {
-            position: absolute;
-            width: 255px;
-            height: 36px;
-            bottom: -60px;
-            right: 0px;
-            text-align: center;
-        }
-        .startggIcon {
-            height: 20px;
-            width: 20px;
-			fill: rgb(255, 255, 255);
-            transform: translateY(3px);
-        }
-        .linksTwitchBox {
-            position: absolute;
-            width: 255px;
-            height: 36px;
-            bottom: -62px;
-            right: 0px;
-            text-align: center;
-        }
-        .twitchIcon {
-            height: 17px;
-            width: 17px;
-            fill: rgb(168, 168, 168);
-            transform: translateY(2px);
-        }
-        .linksText {
-            font-size: 18px;
-            font-family: "Smash";
-        }
-		.twitchIconLinks {
-            height: 17px;
-            width: 17px;
-			fill: rgb(255, 255, 255);
-            transform: translateY(2px);
-        }
+        
 
         #introVid {
             position: absolute;
@@ -508,8 +448,8 @@
         <img src="Resources/Overlay/Logo.png" id="logo" class="absol">
 
     </div>
- 
-	<div id="tournamentLogo" class="tournamentLogo">
+	
+		<div id="tournamentLogo" class="tournamentLogo">
 
         <img src="Resources/Overlay/Weekly Icons/West-Towne-Brawl-2-crop.png" id="tournamentLogo" class="absol">
 
@@ -643,7 +583,18 @@
             <div id="caster1SocialBox" class="casterSocialBox">
                 <div id="caster1TwitterBox" class="casterTwitterBox">
                     <svg class="twitterIcon" viewBox="0 0 20 20">
+                        <!-- 
 						<path d="M18.258,3.266c-0.693,0.405-1.46,0.698-2.277,0.857c-0.653-0.686-1.586-1.115-2.618-1.115c-1.98,0-3.586,1.581-3.586,3.53c0,0.276,0.031,0.545,0.092,0.805C6.888,7.195,4.245,5.79,2.476,3.654C2.167,4.176,1.99,4.781,1.99,5.429c0,1.224,0.633,2.305,1.596,2.938C2.999,8.349,2.445,8.19,1.961,7.925C1.96,7.94,1.96,7.954,1.96,7.97c0,1.71,1.237,3.138,2.877,3.462c-0.301,0.08-0.617,0.123-0.945,0.123c-0.23,0-0.456-0.021-0.674-0.062c0.456,1.402,1.781,2.422,3.35,2.451c-1.228,0.947-2.773,1.512-4.454,1.512c-0.291,0-0.575-0.016-0.855-0.049c1.588,1,3.473,1.586,5.498,1.586c6.598,0,10.205-5.379,10.205-10.045c0-0.153-0.003-0.305-0.01-0.456c0.7-0.499,1.308-1.12,1.789-1.827c-0.644,0.28-1.334,0.469-2.06,0.555C17.422,4.782,17.99,4.091,18.258,3.266"></path>
+						-->
+						<path d="M801 3985 c-402 -88 -703 -390 -785 -787 -24 -115 -24 -1112 0 -1146
+							36 -51 42 -52 491 -52 459 0 446 -2 478 60 13 24 15 93 15 427 0 438 0 441 63
+							487 28 21 32 21 1451 26 1550 5 1440 1 1472 61 11 23 14 103 14 446 0 459 2
+							446 -60 478 -25 13 -219 15 -1552 14 -1258 0 -1534 -3 -1587 -14z"/>
+						<path d="M3052 1984 c-51 -36 -52 -43 -52 -471 0 -438 0 -441 -63 -487 -28
+							-21 -32 -21 -1451 -26 -1550 -5 -1440 -1 -1472 -61 -11 -23 -14 -103 -14 -447
+							0 -402 1 -420 20 -444 10 -14 32 -30 47 -37 21 -8 423 -11 1573 -9 l1545 3 88
+							28 c120 37 200 75 293 138 160 107 303 288 370 467 62 167 64 187 64 764 0
+							574 2 551 -60 583 -44 23 -855 22 -888 -1z"/>
 					</svg>
                     <span id="caster1Tr" class="socialText"></span>
                 </div>
@@ -689,33 +640,6 @@
             </div>
 
         </div>
-    </div>
-	
-	<div id="overlayLinks">
-		<div id="linksTextBox" class="linksTextBox">
-			<span id="linksNum" class="linksText"></span>
-		</div>
-		
-		<div id="linksSocialBox" class="linksSocialBox">
-			<div id="linksStartggBox" class="linksStartggBox">
-				<svg class="startggIcon" viewBox="0 0 600 450" >
-					<path class="st0" d="M149.2,225.4h60.2c5.5,0,10-4.5,10-10v-60.2c0-5.5,4.5-10,10-10h220.8c5.5,0,10-4.5,10-10V74.8
-						c0-5.5-4.5-10-10-10H219.4c-44.3,0-80.3,35.9-80.3,80.3v70.2C139.1,220.9,143.6,225.4,149.2,225.4z"/>
-					<path class="st1" d="M450.2,225.4H390c-5.5,0-10,4.5-10,10v60.2c0,5.5-4.5,10-10,10H149.2c-5.5,0-10,4.5-10,10v60.2
-						c0,5.5,4.5,10,10,10H380c44.3,0,80.3-35.9,80.3-80.3v-70.2C460.3,229.9,455.8,225.4,450.2,225.4z"/>
-				</svg>
-				<span id="linksStgg" class="linksText"></span>
-			</div>
-
-			<div id="linksTwitchBox" class="linksTwitchBox">
-				<svg class="twitchIconLinks" viewBox="0 0 24 24">
-					<path d="m.975 4.175v16.694h5.749v3.131h3.139l3.134-3.132h4.705l6.274-6.258v-14.61h-21.434zm3.658-2.09h17.252v11.479l-3.66 3.652h-5.751l-3.134 3.127v-3.127h-4.707z"/>
-					<path d="m10.385 6.262h2.09v6.26h-2.09z"/>
-					<path d="m16.133 6.262h2.091v6.26h-2.091z"/>
-				</svg>
-				<span id="linksTh" class="linksText"></span>
-			</div>
-		</div>
     </div>
 
 
