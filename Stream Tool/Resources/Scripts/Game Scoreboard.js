@@ -525,6 +525,15 @@ async function getData(scInfo) {
 		if (document.getElementById('caster2Th').textContent != twitch2){
 			updateSocial(twitch2, "caster2Th", "caster2TwitchBox", twitter2, "caster2TwitterBox");
 		}
+		
+		if (document.getElementById('linksNum').textContent != tournamentNumber){
+			fadeOut("#linksNum", () => {
+				updateSocialText("linksNum", tournamentNumber, casterSize, "linksTextBox");
+				if (tournamentNumber != "") {
+					fadeIn("#linksNum");
+				}
+			});
+		}
 	}
 }
 
