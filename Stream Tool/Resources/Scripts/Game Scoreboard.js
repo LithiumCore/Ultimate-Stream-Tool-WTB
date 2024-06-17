@@ -76,7 +76,9 @@ async function getData(scInfo) {
 	twitch2 = scInfo['caster2Twitch'];;
 	let startggLink = "start.gg/WTB";
 	let twitchLink = "twitch.tv/WisconsinSmash";
+	twitchLink = "WisconsinSmash" // temp for 100
 	let tournamentNumber = "#" + scInfo['tournamentName'].slice(-2);
+	tournamentNumber = "" //temp for 100
 
 
 	//first, things that will happen only the first time the html loads
